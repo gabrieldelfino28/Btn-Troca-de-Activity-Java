@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="horizontal"
+    android:foregroundTint="#00242121"
+    android:theme="@android:style/Theme.Holo.Wallpaper"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnQueAbreTelaComLinearLayoutVertical"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:backgroundTint="#00FF0000"
+            android:backgroundTintMode="screen"
+            android:text="Tela Vertical"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <Button
+            android:id="@+id/btnQueAbreTelaComLinearLayoutHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#3D40C9"
+            android:backgroundTintMode="add"
+            android:text="Tela Horizontal"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/btnQueAbreTelaPassandoDadadosPraEla"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:backgroundTint="#FFC107"
+            android:backgroundTintMode="add"
+            android:text="Tela de Dados"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="172dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textViewNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nome" />
+
+                <EditText
+                    android:id="@+id/editTextNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
